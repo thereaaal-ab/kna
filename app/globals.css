@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-luxury-charcoal;
+  }
+  
+  body {
+    @apply bg-luxury-black text-luxury-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-morphism {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .luxury-shadow {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  }
+  
+  .luxury-shadow-gold {
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2), 0 0 0 1px rgba(212, 175, 55, 0.1);
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-light;
+  }
+}
+
