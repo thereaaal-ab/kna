@@ -4,7 +4,6 @@ import LogoSection from '@/components/sections/LogoSection'
 import AdvancedSearchBar from '@/components/search/AdvancedSearchBar'
 import FeaturedProperties from '@/components/sections/FeaturedProperties'
 import WhyChooseUs from '@/components/sections/WhyChooseUs'
-import ExploreLocations from '@/components/sections/ExploreLocations'
 import Testimonials from '@/components/sections/Testimonials'
 import ContactCTA from '@/components/sections/ContactCTA'
 import Footer from '@/components/layout/Footer'
@@ -20,7 +19,6 @@ export default function Home() {
       </div>
       <FeaturedProperties />
       <WhyChooseUs />
-      <ExploreLocations />
       <Testimonials />
       <ContactCTA />
       <Footer />
