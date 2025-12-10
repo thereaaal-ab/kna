@@ -78,7 +78,7 @@ export default function PropertyGallery({ images, title }: PropertyGalleryProps)
 
         {/* Thumbnail Indicators */}
         {images.length > 1 && (
-          <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2 overflow-x-auto max-w-full px-4">
+          <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2 justify-center flex-wrap max-w-full px-4">
             {images.map((image, index) => (
               <button
                 key={index}
