@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 import type { StaticImageData } from 'next/image'
 import { MapPin, Bed, Bath, Square } from 'lucide-react'
 
@@ -98,7 +99,8 @@ export default function FeaturedProperties() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group bg-luxury-charcoal rounded-2xl overflow-hidden luxury-shadow hover:luxury-shadow-gold transition-all duration-500 hover:-translate-y-2"
             >
-              <div className="relative h-64 overflow-hidden">
+              <Link href={`/property/${property.id}`}>
+                <div className="relative h-64 overflow-hidden cursor-pointer">
                 <Image
                   src={property.image}
                   alt={property.title}
@@ -147,11 +149,12 @@ export default function FeaturedProperties() {
                   <span className="font-serif text-2xl font-bold text-luxury-gold">
                     {property.price}
                   </span>
-                  <button className="px-4 py-2 bg-luxury-gold/10 hover:bg-luxury-gold text-luxury-gold hover:text-luxury-black rounded-lg transition-all duration-300 text-sm font-medium">
+                  <span className="px-4 py-2 bg-luxury-gold/10 hover:bg-luxury-gold text-luxury-gold hover:text-luxury-black rounded-lg transition-all duration-300 text-sm font-medium inline-block">
                     Voir détails
-                  </button>
+                  </span>
                 </div>
               </div>
+              </Link>
             </motion.div>
           ))}
         </div>

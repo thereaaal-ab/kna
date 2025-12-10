@@ -44,10 +44,6 @@ export default function AdvancedSearchBar() {
     'Est',
     'Ouest',
     'Centre',
-    'Casablanca',
-    'Rabat',
-    'Marrakech',
-    'Tanger',
   ]
 
   const handleInputChange = (field: keyof SearchFilters, value: string) => {

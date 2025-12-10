@@ -15,34 +15,6 @@ interface Location {
 
 const locations: Location[] = [
   {
-    id: 'casablanca',
-    name: 'Casablanca',
-    description: 'Cœur économique du Maroc',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    propertyCount: 45,
-  },
-  {
-    id: 'rabat',
-    name: 'Rabat',
-    description: 'Capitale administrative',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
-    propertyCount: 32,
-  },
-  {
-    id: 'marrakech',
-    name: 'Marrakech',
-    description: 'Perle du Sud',
-    image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&q=80',
-    propertyCount: 38,
-  },
-  {
-    id: 'tanger',
-    name: 'Tanger',
-    description: 'Porte de l\'Europe',
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80',
-    propertyCount: 28,
-  },
-  {
     id: 'agadir',
     name: 'Agadir',
     description: 'Riviera marocaine',
